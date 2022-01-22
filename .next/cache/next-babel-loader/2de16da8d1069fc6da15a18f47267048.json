@@ -1,0 +1,1 @@
+{"ast":null,"code":"import mongoose from 'mongoose';\nconst CategoriesSchema = new mongoose.Schema({\n  name: {\n    type: String,\n    required: true,\n    trim: true\n  }\n}, {\n  timestamps: true\n});\nlet Dataset = mongoose.models.categories || mongoose.model('categories', CategoriesSchema);\nexport default Dataset;","map":null,"metadata":{},"sourceType":"module"}
